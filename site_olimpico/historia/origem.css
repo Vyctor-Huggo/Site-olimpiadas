@@ -1,0 +1,15 @@
+.gradient {
+    position: absolute;
+    background-image: linear-gradient(to top, #D8B2E8 13%, #3E0071 44%, #2D1960 88%);
+    opacity: 0.5;
+    z-index: 2;
+    height: 500px;
+
+    top: 50px;
+}
+
+.imagem {
+    height: 500px;
+    background-image: url(../home/imgs/image.png) ;
+    z-index: 1;
+}

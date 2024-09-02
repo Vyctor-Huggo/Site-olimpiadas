@@ -1,0 +1,21 @@
+thead th {
+    border-bottom: 2px solid #9E82D8;
+}
+
+thead th:first-child {
+    border-right: 2px solid #9E82D8;
+}
+
+th, td {
+    font-size:larger;
+}
+
+@media screen and (max-width: 600px) {
+    th, td {
+        font-size:small;
+    }
+    
+    td img {
+        height: 20px;
+    }
+}

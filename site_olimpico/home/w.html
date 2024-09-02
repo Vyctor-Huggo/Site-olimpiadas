@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Circular com Overflow</title>
+    <style>
+        .div-pai {
+            position: relative;
+            width: 200px;  /* Ajuste o tamanho conforme necessário */
+            height: 200px; /* Ajuste o tamanho conforme necessário */
+            background-color: #f0f0f0; /* Apenas para visualização */
+            overflow: hidden; /* Oculta o conteúdo que sai da div-pai */
+            border: 2px solid #333; /* Apenas para visualização */
+        }
+
+        .div-circular {
+            position: absolute;
+            width: 200px;  /* Ajuste o tamanho conforme necessário */
+            height: 150px; /* Ajuste o tamanho conforme necessário */
+            background-color: #3498db; /* Apenas para visualização */
+            border-radius: 50% 0% 50% 50%;
+            left: 0; /* Ajusta a posição horizontal para manter 50% dentro da div-pai */
+            top: 200px; /* Centraliza verticalmente */
+            transform: translateY(-50%); /* Ajusta a posição vertical */
+        }
+    </style>
+</head>
+<body>
+    <div class="div-pai">
+        <div class="div-circular"></div>
+    </div>
+</body>
+</html>
