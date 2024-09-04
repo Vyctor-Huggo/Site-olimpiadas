@@ -10,44 +10,69 @@
     <link rel="stylesheet" href="calendario.css">
 </head>
 <body>
+
+  <!-- Svgs -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="home" viewBox="0 0 16 16">
+      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+    </symbol>
+
+    <symbol id="list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </symbol>
+
+  </svg>
+
       <!-- Nav -->
-      <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+      <nav class="fixed-top">
+        <div id="header" class="container-fluid">
+          
+          <svg class="bi m-md-3 m-2" width="24" height="24" fill="white" role="button" onclick="window.location.href='siteOlimpico.html'"><use xlink:href="#home"/></svg>
+  
+          <div class="container-fluid m-auto">
+            <div class="d-inline-block ms-md-4" role="button" onclick="window.location.href='../calendario/calendario.html'">
+              <span class="m-2" >Programação</span>
+            </div>
+            <div class="d-inline-block ms-md-4" role="button" onclick="window.location.href='../medalhas/Medalhas.html'">
+              <span class="m-2" >Medalhas</span>
+            </div>
+          </div>
+          <div id="circulo"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <svg class="bi m-md-2" width="30" height="30" fill="white"><use xlink:href="#list"/></svg>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-header" data-bs-theme="dark">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" fill="white"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link ms-2" href="../historia/origem.html">História dos Jogos Olímpicos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Programação</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Atletas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../medalhas/Medalhas.html ">Medalhas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Notícias e Atualizações</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Mapa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Contato</a>
                 </li>
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
             </div>
           </div>
         </div>
@@ -79,10 +104,14 @@
                     <th class="border border-0"></th>
                     <td colspan="2" class="border border-0 text-start">
                       <img class="d-inline-block" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" height="40px">
-                      <p class="d-inline-block">Espanha</p>
+                      <p class="d-inline-block fw-bold">Espanha</p>
                       <br>
                         <img class=" d-inline-block" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg" height="40px">
                         <p class=" d-inline-block">Marrocos</p> 
+                    </td>
+                    <td class="border border-0 text-end">
+                      <p class="fw-bold">1</p>
+                      <p>0</p>
                     </td>
                 </tr>
             </tbody>
@@ -133,10 +162,14 @@
                   <th class="border border-0"></th>
                   <td colspan="2" class="border border-0 text-start">
                     <img class="d-inline-block" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" height="40px">
-                    <p class="d-inline-block">Espanha</p>
+                    <p class="d-inline-block fw-bold">Espanha</p>
                     <br>
                       <img class=" d-inline-block" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg" height="40px">
                       <p class=" d-inline-block">Marrocos</p> 
+                  </td>
+                  <td class="border border-0 text-end">
+                    <p class="fw-bold">1</p>
+                    <p>0</p>
                   </td>
               </tr>
           </tbody>
@@ -161,10 +194,14 @@
                 <th class="border border-0"></th>
                 <td colspan="2" class="border border-0 text-start">
                   <img class="d-inline-block" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" height="40px">
-                  <p class="d-inline-block">Espanha</p>
+                  <p class="d-inline-block fw-bold">Espanha</p>
                   <br>
                     <img class=" d-inline-block" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg" height="40px">
                     <p class=" d-inline-block">Marrocos</p> 
+                </td>
+                <td class="border border-0 text-end">
+                  <p class="fw-bold">1</p>
+                  <p>0</p>
                 </td>
             </tr>
         </tbody>
@@ -183,10 +220,14 @@
               <th class="border border-0"></th>
               <td colspan="2" class="border border-0 text-start">
                 <img class="d-inline-block" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" height="40px">
-                <p class="d-inline-block">Espanha</p>
+                <p class="d-inline-block fw-bold">Espanha</p>
                 <br>
                   <img class=" d-inline-block" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg" height="40px">
                   <p class=" d-inline-block">Marrocos</p> 
+              </td>
+              <td class="border border-0 text-end">
+                <p class="fw-bold">1</p>
+                <p>0</p>
               </td>
           </tr>
       </tbody>
