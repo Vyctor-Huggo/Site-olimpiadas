@@ -176,10 +176,16 @@ div.scrollmenu div {
     position: absolute;
     background-color: white;
     
+    cursor: pointer;
     right: 12%;
     font-size: larger;
     width: auto;
     border-radius: 10px 0 0 10px;
+}
+
+#lerMais:hover {
+    background-color: #45086C;
+    color: white;
 }
 
 #imagemOrigem {
