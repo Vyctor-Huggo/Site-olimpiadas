@@ -23,6 +23,17 @@
     z-index: 1;
 }
 
+.gold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: #F4E34B;
+    color: white;
+    height: 40px;
+    width: 40px;
+}
+
 @media screen and (max-width: 700px){
     .gradient {
         height: 300px;
