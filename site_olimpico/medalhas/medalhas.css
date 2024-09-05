@@ -23,16 +23,42 @@
     z-index: 1;
 }
 
-.gold {
+tbody td {
+    border-bottom: 2px solid #9E82D8;
+}
+
+tbody td:first-child {
+    border-right: 2px solid #9E82D8;
+}
+
+.medal {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40px;
-    background-color: #F4E34B;
-    color: white;
     height: 40px;
     width: 40px;
+    color: white;
 }
+
+th, td {
+    font-size:larger;
+}
+    
+
+.gold {
+    background-color: #F4E34B;
+}
+
+.silver {
+    background-color: #D9D9D9;
+}
+
+.bronze {
+    background-color: #EA9531;
+}
+
+
 
 @media screen and (max-width: 700px){
     .gradient {
