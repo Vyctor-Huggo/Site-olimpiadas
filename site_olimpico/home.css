@@ -25,7 +25,7 @@ nav {
     color:  #501E70;
 }
 
-.bi:hover {
+.bi.m-md-3:hover, .bi.m-md-2:hover {
     fill: #45086C;
 }
 

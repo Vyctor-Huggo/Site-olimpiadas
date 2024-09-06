@@ -21,6 +21,10 @@
     <symbol id="list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
     </symbol>
+
+    <symbol id="down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+    </symbol>
 </svg>
 
   <!-- Nav -->
@@ -87,11 +91,11 @@
 
 <!-- Cabeçalho do Quadro -->
     <br><br><br>
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-md-5 p-0">
         <table class="table text-center">
             <thead>
                 <tr>
-                    <th class="border border-0"><span class="fs-3">Equipes</span></th>
+                    <th class="border border-0">Equipes</th>
                     <th class="border border-0">
                         <div class="m-auto medal gold h5">
                             1
@@ -107,22 +111,22 @@
                             3
                         </div>
                     </th>
-                    <th class="border border-0 fs-3">Total</th>
+                    <th class="border border-0">Total</th>
                 </tr>
             </thead>
 
             <!-- Paises e suas respectivas medalhas -->
             <tbody>
-                <tr class="borda-direita">
-                    <td>
+                <tr>
+                    <td class="borda-direita">
                         <div class="row m-auto">
-                            <div class="col-4">
+                            <div class="col-4 p-0">
                                 <span class="fw-bold" style="color: #501E70;">1</span>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 p-0">
                                 <div id="bandeira" class="container-fluid" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbEP9_UogxxGxImR5hlQcg5fR73yIFlH3U0uBv3yGVeLFUJGrOb-glHEfy04&s=10')"></div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 p-0 nome-pais">
                                 <span>BRA</span>
                             </div>
                         </div>
@@ -131,36 +135,100 @@
                     <td>200</td>
                     <td>200</td>
                     <td>200</td>
-                    <td>
-                        <span class="m-auto medal butao bntPlus" id="bnt-" type="button" data-bs-toggle="collapse" data-bs-target="#brasil" aria-expanded="false">
+                    <td class="p-0">
+                        <span class="m-auto medal butao bntPlus" type="button" data-bs-toggle="collapse" data-bs-target="#brasil" aria-expanded="false">
                             +
                         </span>
                     </td>
                 </tr>
 
         <!-- Modalidades com medalha brasil-->
-            <tr class=" collapse" id="brasil">
-                <td colspan="5" class="accordion-item">
-                    <button class="accordion-button collapsed fs-3 text-center
-                    " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Futebol
-                    </button>
+
+            <!-- Futebol -->
+            <tr class="collapse" id="brasil">
+                <td colspan="6" class="accordion-item">
+                    <div class="collapsed row text-center borda-embaixo seta-baixo" type="button" data-bs-toggle="collapse" data-bs-target="#brasil-futebol" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <div class="col-4 text-start fw-medium">
+                            Futebol
+                        </div>
+                        <div class="col-4">
+                            <svg class="bi" width="40" height="40" fill="#6F4CB8"><use xlink:href="#down"/></svg>
+                        </div>
+                        <div class="col-4 text-end">
+                            2 medalhas
+                        </div>
+                    </div>
                 
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body row">
-                            <div class="col-2 borda-direita">
+                <!-- Específicos do futebol do brasil -->
+                    <div id="brasil-futebol" class="accordion-collapse collapse">
+                        <div class="row borda-embaixo">
+                            <div class="col-md-3 col-4 text-start borda-direita">
                                 Feminino
                             </div>
-                            <div class="col-2">
-                                Ouro
+                            <div class="col-md-7 col-6 text-start">
+                                Brasil
+                            </div>
+                            <div class="col-md-2 m-1 medal gold h5 text-end">
+                                1
+                            </div>
+                        </div>
+                        <div class="row borda-embaixo">
+                            <div class="col-md-3 col-4 text-start borda-direita">
+                                Masculino
+                            </div>
+                            <div class="col-md-7 col-6 text-start">
+                                Brasil
+                            </div>
+                            <div class="col-2 m-1 medal gold h5">
+                                1
                             </div>
                         </div>
                     </div>
                 </td>
             </tr>
 
-                <!-- Específico do futebol -->
+            <!-- Tenis de Mesa -->
+            <tr class="collapse" id="brasil">
+                <td colspan="6" class="accordion-item">
+                    <div class="collapsed row text-center borda-embaixo seta-baixo" type="button" data-bs-toggle="collapse" data-bs-target="#brasil-tenis_de_mesa" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <div class="col-4 text-start fw-medium">
+                            Tenis de Mesa
+                        </div>
+                        <div class="col-4">
+                            <svg class="bi" width="40" height="40" fill="#6F4CB8"><use xlink:href="#down"/></svg>
+                        </div>
+                        <div class="col-4 text-end">
+                            2 medalhas
+                        </div>
+                    </div>
                 
+                <!-- Específico do tenis de mesa -->
+                    <div id="brasil-tenis_de_mesa" class="accordion-collapse collapse">
+                        <div class="row borda-embaixo">
+                            <div class="col-2 text-start borda-direita">
+                                Feminino
+                            </div>
+                            <div class="col-8 text-start">
+                                Brasil
+                            </div>
+                            <div class="col-2 m-1 medal gold h5 text-end">
+                                1
+                            </div>
+                        </div>
+                        <div class="row borda-embaixo">
+                            <div class="col-2 text-start borda-direita">
+                                Masculino
+                            </div>
+                            <div class="col-8 text-start">
+                                Brasil
+                            </div>
+                            <div class="col-2 m-1 medal gold h5">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
             </tbody>
         </table>
     </div>

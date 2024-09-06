@@ -23,13 +23,14 @@
     z-index: 1;
 }
 
-tbody td {
+tbody td, .borda-embaixo {
     border-bottom: 2px solid #9E82D8;
 }
 
-.borda-direita td:first-child {
+.borda-direita {
     border-right: 2px solid #9E82D8;
 }
+
 
 .medal {
     display: flex;
@@ -41,7 +42,7 @@ tbody td {
     color: white;
 }
 
-td {
+td, th {
     font-size:xx-large;
 }
 
@@ -67,13 +68,7 @@ td {
     background-repeat: no-repeat;
 }
 
-#bnt- {
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-}
-
-#bnt-:hover {
+.butao:hover {
     background-color: #3E0071;
     color: white;
 }
@@ -88,6 +83,11 @@ td {
     color: white;
 }
 
+.seta-baixo:hover{
+    color: white;
+    background-color: #3E0071;
+}
+
 @media screen and (max-width: 700px){
     .gradient {
         height: 300px;
@@ -95,5 +95,19 @@ td {
     #circuloGradient {
         width: 100%;
         height: 500px;
+    }
+
+    td, th {
+        font-size: medium;
+    }
+
+    .medal {
+        border-radius: 30px;
+        width: 30px;
+        height: 30px;
+    } 
+
+    .nome-pais {
+        display: none;
     }
 }
