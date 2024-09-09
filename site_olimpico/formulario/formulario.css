@@ -1,0 +1,187 @@
+.w-65 {
+    width: 65%;
+}
+
+.search-div {
+    margin-top: 80px;
+}
+
+.btn-transparent {
+    background-color: transparent; /* Remove a cor de fundo do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0; /* Remove o padding para o botão se ajustar ao tamanho do ícone */
+}
+
+.btn-transparent .bi {
+    color: #1D1B20;
+
+}
+
+.input-group {
+    /* Ajusta a altura do campo de entrada */
+    width: 100%; /* Faz o campo de entrada preencher o container */
+}
+
+.input-group .bi {
+    color: #1D1B20;
+}
+
+.input-group .btn {
+    border-radius: 0; /* Remove o arredondamento das bordas para um estilo retangular */
+    border: 1px solid #9C64BF; /* Define uma borda padrão */
+}
+
+.input-group .form-control {
+    /* Ajusta o tamanho do campo de entrada */
+    font-size: 1.25rem; /* Aumenta o tamanho da fonte */
+    padding: 0.75rem 1rem; /* Ajusta o padding interno */
+    border-radius: 10px; /* Remove o arredondamento das bordas */
+    background-color: #F4E0FD;
+    border: none; /* Remove a borda do campo de entrada */
+}
+
+.input-group .form-control:focus {
+    box-shadow: none; /* Remove a sombra de foco padrão */
+    border-color: none; /* Define a cor da borda como a padrão dos botões */
+}
+
+.input-group .btn:focus {
+    box-shadow: none; /* Remove a sombra de foco padrão */
+    outline: none; /* Remove o contorno padrão de foco */
+    border-color: none; /* Define a cor da borda como a padrão dos botões */
+}
+
+.btn-outline-secondary {
+    /* Ajusta o tamanho do botão secundário */
+    font-size: 1.25rem; /* Aumenta o tamanho da fonte */
+    padding: 0.75rem 1.25rem; /* Ajusta o padding interno */
+    border-radius: 10px; /* Remove o arredondamento das bordas */
+    border: none; /* Adiciona uma borda preta ao redor do botão */
+    background-color: #9C64BF;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #894ab0;
+}
+
+.btn-outline-secondary:active {
+    background-color: #b56ce2; /* Cor de fundo quando o botão é pressionado */
+    border-color: #b56ce2; /* Cor da borda quando o botão é pressionado */
+  }
+
+
+.accordion-button {
+    border-radius: 0; /* Remove o arredondamento das bordas */
+    border: none;
+    background-color: #F4E0FD;
+    font-size: 1.25rem; /* Aumenta o tamanho da fonte */
+    padding: 1rem; /* Aumenta o padding para mais espaçamento interno */
+    box-shadow: none; /* Remove a sombra padrão */
+}
+
+.accordion-button:not(.collapsed) {
+    border-radius: 0;
+    border: 2px solid #9C64BF;
+    border-bottom: none;
+    background-color: #F4E0FD; /* Cor de fundo quando o botão está expandido */
+    color: #1D1B20;
+}
+
+.accordion-collapse {
+    border-radius: 0px 0px 10px 10px;
+    background-color: #F4E0FD;
+    
+    border: 2px solid #9C64BF; /* Borda superior conectada ao botão */
+    border-top: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    margin-bottom: 1rem; /* Espaçamento entre os itens do acordeão */
+    border: none; /* Adiciona uma borda ao redor do item */
+    border-radius: 0; /* Remove o arredondamento das bordas do item */
+}
+
+.accordion-body {
+    font-size: 1rem; /* Aumenta o tamanho da fonte do corpo do acordeão */
+    padding: 1.25rem; /* Aumenta o padding interno */
+}
+
+.modal-content {
+    color: #250C35;
+    border-radius: 10px;
+    border: 2px solid #25053F;
+    background-color: #FFF5ED;
+  }
+
+.btn-close {
+    color: #1D1B20;
+}
+
+.form-control {
+    color: #250C35;
+    border: none;
+    background-color: #F4E0FD;
+    box-shadow: none; /* remove a sombra ao focar */
+}
+
+.form-control:focus {
+    outline: none; /* remove o outline ao focar */
+    box-shadow: none; /* remove a sombra ao focar */
+}
+
+.form-select {
+    border: none;
+    background-color: #F4E0FD;
+    box-shadow: none; /* remove a sombra ao focar */
+}
+
+.form-select:focus {
+    outline: none; /* remove o outline ao focar */
+    box-shadow: none; /* remove a sombra ao focar */
+}
+
+.custom-select {
+    border: 2px solid #25053F; /* Borda ao redor do select */
+    background-color: #F4E0FD;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.custom-select option {
+    border-bottom: 2px solid #25053F; /* Borda entre as opções */
+    background-color: #F4E0FD;
+}
+
+
+.btn-primary {
+    background-color: #F4E0FD;
+    border: none;
+    border-radius: 0;
+    color: #250C35;
+    width: 100%; /* Largura completa */
+}
+
+.submit-container {
+    text-align: center; /* Centraliza o botão */
+    width: 100%; /* Largura total */
+}
+
+.btn-submit {
+    width: 50%; /* Largura maior */
+}
+
+.btn-primary:hover {
+    background-color: #25053F;
+    border: none;
+}
+
+.card {
+    max-width: 25rem;
+    border: 2px solid #1D1B20;
+    color: #1D1B20;
+    background-color: #FFF5ED;
+}

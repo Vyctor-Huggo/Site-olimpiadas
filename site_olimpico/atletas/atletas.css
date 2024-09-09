@@ -1,0 +1,177 @@
+.search-div {
+    margin-top:80px;
+}
+
+.btn-transparent {
+    border: none;
+}
+
+.btn-transparent:hover {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    border-radius: 0;
+    border: 2px solid black;
+    box-shadow: none;
+    width: 100%;
+}
+
+.input-group .bi {
+    color: #1D1B20;
+}
+
+.input-group .btn {
+    box-shadow: none; /* Remove a sombra de foco padrão */
+    outline: none; /* Remove o contorno padrão de foco */
+    border-color: none; /* Define a cor da borda como a padrão dos botões */
+    border-radius: 0;
+}
+
+.input-group .btn:hover {
+    border-radius: 0;
+    background-color: #894ab0;
+}
+
+.input-group .btn-outline-secondary {
+    font-size: 1.25rem; /* Aumenta o tamanho da fonte */
+    padding: 0.75rem 1.25rem; /* Ajusta o padding interno */
+    border-radius: 0; /* Remove o arredondamento das bordas */
+    border: none; /* Adiciona uma borda preta ao redor do botão */
+}
+
+.input-group .btn-outline-secondary:hover {
+    background-color: #894ab0;
+}
+
+.input-group .btn-outline-secondary:active {
+    border-radius: 0;
+    background-color: #25053F;
+}
+
+.input-group .form-control {
+    /* Ajusta o tamanho do campo de entrada */
+    font-size: 1.25rem; /* Aumenta o tamanho da fonte */
+    padding: 0.75rem 1rem; /* Ajusta o padding interno */
+    border: none; /* Remove a borda do campo de entrada */
+}
+
+.input-group .form-control:focus {
+    box-shadow: none; /* Remove a sombra de foco padrão */
+    border-color: none; /* Define a cor da borda como a padrão dos botões */
+}
+
+#filterSection {
+    display: none;
+}
+
+.filter select{
+    width: 20vw;
+    height: 6vh;
+    border-radius: 0;
+    background-color: #501E70;
+    color: #FFFFFF;
+    box-shadow: none;
+    font-size: 1.2rem;
+}
+
+.filter select:focus{
+    border-radius: 0;
+    background-color: #501E70;
+    color: #FFFFFF;
+    box-shadow: none;
+    font-size: 1.2rem;
+}
+
+.circle {
+    width: 8vw;
+    height: 8vw;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+
+@media (max-width: 768px) {
+    .circle {
+      width: 20vw;
+      height: 20vw;
+    }
+  }
+
+@media (max-width: 576px) {
+    .circle {
+        width: 25vw;
+        height: 25vw;
+    }
+}
+  
+/* Estilos específicos para cada círculo (exemplo de uso de classes exclusivas) */
+.circle-1 {
+    background-image: url(data/image.png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-2 {
+    background-image: url(data/image\ \(1\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-3 {
+    background-image: url(data/image\ \(2\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-4 {
+    background-image: url(data/image\ \(3\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-5 {
+    background-image: url(data/image\ \(4\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-6 {
+    background-image: url(data/image\ \(5\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-7 {
+    background-image: url(data/image\ \(6\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-8 {
+    background-image: url(data/image\ \(7\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-9 {
+    background-image: url(data/image\ \(8\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-10 {
+    background-image: url(data/image\ \(9\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-11 {
+    background-image: url(data/image\ \(10\).png);
+    background-position: center;
+    background-size: auto;
+}
+.circle-12 {
+    background-image: url(data/image\ \(11\).png);
+    background-position: center;
+    background-size: auto;
+}
+
+

@@ -1,0 +1,36 @@
+.content-blog {
+    margin-top: 80px;
+}
+
+.container {
+    display: flex;
+}
+  
+.row {
+    display: flex;
+    width: 100%;
+}
+  
+.column-left {
+    border-right: 2px solid #000; /* Adjust the color and width as needed */
+    padding: 2vh;
+}
+
+.column-right {
+    padding: 2vh;
+}
+
+.circle {
+    width: 18vw;
+    height: 18vw;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.info-athlete {
+    
+}
