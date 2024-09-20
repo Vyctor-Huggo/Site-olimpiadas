@@ -78,32 +78,40 @@
     
 
     <!-- carrossel -->
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="imgs/baskas.avif" class="d-block w-100">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h5>Brasil eliminado no Basquete</h5>
+              <p>EUA dão show, vencem e eliminam Brasil no basquete. O Brasil está eliminado nas quartas de final do torneio de basquete masculino das Olimpíadas.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="imgs/brasil-volei-feminino-2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5>Brasil é bronze no volêi feminino</h5>
+              <p>A seleção feminina de vôlei do Brasil obteve a medalha de bronze nos Jogos Olímpicos Paris 2024 com uma vitória sobre a Turquia por 3 sets a 1.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="imgs/rebeca.avif" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5>Maior medalista Olímpica do Brasil</h5>
+              <p>Em Paris 2024, Rebeca Andrade se tornou a maior medalhistas Olímpica do Brasil com seis medalhas, ultrapassando Robert Scheidt e Torben Grael, ambos da vela, com cinco cada.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/ana-patricia-e-duda.avif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Brasil é ouro no vôlei de praia</h5>
+              <p>Duda e Ana Patrícia conquistaram a medalha de ouro no vôlei de praia. Na final as brasileiras venceram as canadenses Melissa Humana-Paredes e Brandie Wilkerson por 2 sets a 1</p>
             </div>
           </div>
         </div>
@@ -121,8 +129,8 @@
       <!-- Hoje -->
       <div class="container-fluid" id="hoje">
         <div class="row m-auto">
-          <div class="col-md-2 text-center"><h3>Agora</h3><h4>0</h4><p>Eventos</p></div>
-          <div class="col-md-2 text-center"><h3>Hoje</h3><h4>0</h4><p>Medalhas</p></div>
+          <div class="col-md-2 text-center"><h3>Agora</h3><p>Nenhum evento ativo no momento</p></div>
+          <div class="col-md-2 text-center"><h3>Brasil</h3><h4>20</h4><p>Medalhas</p></div>
         </div>
       </div>
 
@@ -134,23 +142,31 @@
       <div class="scrollmenu container-fluid">
 
         <div id="noticia">
-          <img src="imgs/brasil-volei-feminino-2.jpg" alt="">
-          <h4>Bia conquista primeira medalha de ouro do Brasil</h4>
+          <img src="imgs/20medalhas.webp">
+          <a class="h4" href="https://www.cnnbrasil.com.br/esportes/olimpiadas/resumo-brasil-paris-2024-medalhas-comparacao-outras-edicoes/">
+            Brasil fecha Paris 2024 com 20 medalhas
+          </a>
         </div>
 
         <div id="noticia">
-          <img src="imgs/rebeca.avif" alt="">
-          <h4>Bia conquista primeira medalha de ouro do Brasil</h4>
+          <img src="imgs/bia.jpg">
+          <a class="h4" href="https://www.gov.br/esporte/pt-br/noticias-e-conteudos/esporte/beatriz-souza-traz-para-o-brasil-o-primeiro-ouro-olimpico">
+            Bia conquista primeira medalha de ouro do Brasil
+          </a>
         </div>
 
         <div id="noticia">
-          <img src="imgs/bia.jpg" alt="">
-          <h4>Bia conquista primeira medalha de ouro do Brasil</h4>
+          <img src="imgs/medina.avif">
+          <a class="h4" href="https://ge.globo.com/olimpiadas/noticia/2024/08/05/gabriel-medina-conquista-a-medalha-de-bronze-nos-jogos-olimpicos.ghtml">
+            Medina Conquista a medalha de bronze
+          </a>
         </div>
 
         <div id="noticia">
-          <img src="imgs/bia.jpg" alt="">
-          <h4>Bia conquista primeira medalha de ouro do Brasil</h4>
+          <img src="imgs/marta.webp">
+          <a class="h4" href="https://www.cob.org.br/comunicacao/noticias/brasil-encerra-campanha-historica-em-paris-com-prata-no-futebol-feminino">
+            Brasil encerra campanha com prata no futebol feminino
+          </a>
         </div>
 
       </div>  
@@ -222,19 +238,25 @@
   <div class="m-auto p-3 p-md-4 row" id="quadro">
     <div class="col-md-6 container-fluid">
       <div class="noticiaQuadro noticia1">
-        <a>Bia conquista primeira medalha de ouro do Brasil</a>
+        <a href="https://www.lance.com.br/olimpiadas/rayssa-leal-e-medalha-de-bronze-no-skate-nas-olimpiadas-de-paris.html">
+          Rayssa Leal é medalha de bronze no skate nas Olimpíadas de Paris!
+        </a>
       </div>
       <div class="noticiaQuadro noticia2 mt-4 ">
-        <a>Bia conquista primeira medalha de ouro do Brasil</a>
+        <a href="https://ge.globo.com/olimpiadas/noticia/2024/08/09/isaquias-queiroz-da-arrancada-espetacular-no-fim-e-garante-a-prata-no-c1-1000m-nas-olimpiadas-de-paris.ghtml">
+          Isaquias Queiroz dá arrancada espetacular no fim e garante a prata no C1 1000m em Paris
+        </a>
       </div>
     </div>
     <div class="col-md-6">
       <div class="noticiaQuadro noticia3 mt-md-0 mt-4">
-        <a>Bia conquista primeira medalha de ouro do Brasil</a>
+        <a href="https://bandsports.uol.com.br/alison-dos-santos-de-menino-timido-ao-segundo-podio-olimpico-em-paris/">
+          Alison dos Santos conquista a segunda medalha olímpica nos 400m com barreiras
+        </a>
       </div>
     </div>
     
-    <div id="lerMais" onclick="window.location.href=''">
+    <div id="lerMais" onclick="window.location.href='../noticias/noticias.html'">
       LER MAIS
     </div>
   </div>

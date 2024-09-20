@@ -100,6 +100,16 @@ div.scrollmenu div {
     margin: 10px;
 }
 
+#noticia a {
+    text-decoration: none;
+    color: black;
+}
+
+#noticia a:hover {
+    text-decoration: none;
+    color: #501E70;
+}
+
 #noticia img{
     border-radius: 10px;
     max-width: 20rem;
@@ -137,7 +147,6 @@ div.scrollmenu div {
     display: flex;
     align-items: flex-end;
 
-    color: white;
     font-size: larger;
     background-size: cover;
     background-position: center;
@@ -148,28 +157,34 @@ div.scrollmenu div {
     opacity: 0.8;
     background-color: #45086C;
     width: 100%;
+    text-decoration: none;
+    color: white;
     text-align: center;
+}
+
+.noticiaQuadro a:hover {
+    background-color: #501E70;
 }
 
 .noticia1 {
     width: 100%;
     height: 50%;
 
-    background-image: url("home/imgs/rebeca.avif");
+    background-image: url("home/imgs/rayssa.webp");
 }
 
 .noticia2 {
     width: 100%;
     height: 45.75%;
 
-    background-image: url("home/imgs/brasil-volei-feminino-2.jpg");
+    background-image: url("home/imgs/isaquias-reu4.avif");
 }
 
 .noticia3 {
     width: 100%;
     height: 100%;
 
-    background-image: url("home/imgs/bia.jpg");
+    background-image: url("home/imgs/piu.jpg");
 }
 
 #lerMais {
