@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="galeria.css">
 </head>
 <body>
-    <!-- Svgs -->
+    
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="home" viewBox="0 0 16 16">
         <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
@@ -23,6 +23,7 @@
   
     </svg>
   
+<<<<<<< Updated upstream
   <!-- Nav -->
   <nav class="fixed-top">
     <div id="header" class="container-fluid">
@@ -32,6 +33,60 @@
       <div class="container-fluid m-auto">
         <div class="d-inline-block ms-md-4" role="button" onclick="window.location.href='../calendario/calendario.php'">
           <span class="m-2" >Programação</span>
+=======
+      
+      <nav class="fixed-top">
+        <div id="header" class="container-fluid">
+          
+          <svg class="bi m-md-3 m-2" width="24" height="24" fill="white" role="button" onclick="window.location.href='../home/siteOlimpico.html'"><use xlink:href="#home"/></svg>
+  
+          <div class="container-fluid m-auto">
+            <div class="d-inline-block ms-md-4" role="button" onclick="window.location.href='../calendario/calendario.html'">
+              <span class="m-2" >Programação</span>
+            </div>
+            <div class="d-inline-block ms-md-4" role="button" onclick="window.location.href='../medalhas/Medalhas.html'">
+              <span class="m-2" >Medalhas</span>
+            </div>
+          </div>
+          <div id="circulo"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <svg class="bi m-md-2" width="30" height="30" fill="white"><use xlink:href="#list"/></svg>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" data-bs-theme="dark">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" fill="white"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../historia/origem.html">História dos Jogos Olímpicos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Programação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Atletas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../medalhas/Medalhas.html ">Medalhas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Notícias e Atualizações</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Mapa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="../calendario/calendario.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+>>>>>>> Stashed changes
         </div>
         <div class="d-inline-block ms-md-4" role="button" onclick="window.location.href='../medalhas/Medalhas.php'">
           <span class="m-2" >Medalhas</span>
@@ -75,7 +130,140 @@
     </div>
   </nav>
 
+      <div class="container-fluid main-div w-75">
+        <h1>Galeria</h1>
+        <hr class="custom-line">
+      </div>
+
+      <div class="container mt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://ichef.bbci.co.uk/news/1024/branded_portuguese/9bdd/live/e8944fb0-4eac-11ef-8f0f-0577398c3339.jpg" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.rbsdirect.com.br/filestore/8/8/7/2/1/0/5_e59319dbf8b57ca/5012788_b16336824773052.jpg?format=webp&h=408" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.rbsdirect.com.br/filestore/3/2/6/5/1/0/5_a1dbc99de2cf11f/5015623_f3bcf1c5b08c58f.jpg?format=webp&h=408" class="d-block w-100" alt="Imagem 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.rbsdirect.com.br/filestore/3/9/1/3/1/0/5_99fbaade9915ac7/5013193_760bd9946977732.jpg?format=webp&h=408" class="d-block w-100" alt="Imagem 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.rbsdirect.com.br/filestore/4/2/6/5/1/0/5_1c3c532e680baf6/5015624_a568ae756486695.jpg?format=webp&h=408" class="d-block w-100" alt="Imagem 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.rbsdirect.com.br/filestore/1/7/4/0/1/0/5_ca523efae30814b/5010471_6aac75b6093c7cd.jpg?format=webp&h=408" class="d-block w-100" alt="Imagem 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.rbsdirect.com.br/filestore/9/7/1/9/0/0/5_35235bd21a6e79d/5009179_7959eb4708c8729.jpg?format=webp&h=408" class="d-block w-100" alt="Imagem 7">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.rbsdirect.com.br/filestore/6/0/0/4/1/0/5_7144c60fe5c0a11/5014006_dee6be7a0854310.jpg?format=webp&h=408" class="d-block w-100" alt="Imagem 8">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.rbsdirect.com.br/filestore/7/2/6/5/1/0/5_88c3745c5bd3503/5015627_6cba4eff203a907.jpg?format=webp&h=408" class="d-block w-100" alt="Imagem 9">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    
+        <div class="d-flex justify-content-center mt-3">
+            <img src="https://ichef.bbci.co.uk/news/1024/branded_portuguese/9bdd/live/e8944fb0-4eac-11ef-8f0f-0577398c3339.jpg" class="thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="0" alt="Thumbnail 1">
+            <img src="https://www.rbsdirect.com.br/filestore/8/8/7/2/1/0/5_e59319dbf8b57ca/5012788_b16336824773052.jpg?format=webp&h=408" class="thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="1" alt="Thumbnail 2">
+            <img src="https://www.rbsdirect.com.br/filestore/3/2/6/5/1/0/5_a1dbc99de2cf11f/5015623_f3bcf1c5b08c58f.jpg?format=webp&h=408" class="thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="2" alt="Thumbnail 3">
+            <img src="https://www.rbsdirect.com.br/filestore/3/9/1/3/1/0/5_99fbaade9915ac7/5013193_760bd9946977732.jpg?format=webp&h=408" class="thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="3" alt="Thumbnail 4">
+            <img src="https://www.rbsdirect.com.br/filestore/4/2/6/5/1/0/5_1c3c532e680baf6/5015624_a568ae756486695.jpg?format=webp&h=408" class="thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="4" alt="Thumbnail 5">
+            <img src="https://www.rbsdirect.com.br/filestore/1/7/4/0/1/0/5_ca523efae30814b/5010471_6aac75b6093c7cd.jpg?format=webp&h=408" class="thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="5" alt="Thumbnail 6">
+            <img src="https://www.rbsdirect.com.br/filestore/9/7/1/9/0/0/5_35235bd21a6e79d/5009179_7959eb4708c8729.jpg?format=webp&h=408" class="thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="6" alt="Thumbnail 7">
+            <img src="https://www.rbsdirect.com.br/filestore/6/0/0/4/1/0/5_7144c60fe5c0a11/5014006_dee6be7a0854310.jpg?format=webp&h=408" class="thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="7" alt="Thumbnail 8">
+            <img src="https://www.rbsdirect.com.br/filestore/7/2/6/5/1/0/5_88c3745c5bd3503/5015627_6cba4eff203a907.jpg?format=webp&h=408" class="thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="8" alt="Thumbnail 9">
+        </div>
+    </div>
+
+    <div class="container-fluid w-75">
+      <hr class="custom-line">
+    </div>
+
+    <div class="container-fluid w-65 mb-5 mt-5">
+      <div class="container mt-4">
+          <div class="row g-3">
+              <!-- Primeira Linha - 3 Imagens -->
+              <div class="col-md-4">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7a4c/live/6f4e7190-50d6-11ef-8f0f-0577398c3339.jpg.webp" alt="Imagem 1" class="img-fluid w-100">
+              </div>
+  
+              <div class="col-md-4">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/01bb/live/7d4d7e10-5024-11ef-b2d2-cdb23d5d7c5b.jpg.webp" alt="Imagem 2" class="img-fluid w-100">
+              </div>
+  
+              <div class="col-md-4">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/e718/live/079cc210-5034-11ef-a030-05c04eab08ea.jpg.webp" alt="Imagem 3" class="img-fluid w-100">
+              </div>
+  
+              <!-- Segunda Linha - 2 Imagens -->
+              <div class="col-md-6">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/d02c/live/ecab54e0-5028-11ef-aebc-6de4d31bf5cd.jpg.webp" alt="Imagem 4" class="img-fluid w-100">
+              </div>
+  
+              <div class="col-md-6">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/763e/live/7158a7e0-54a4-11ef-8f0f-0577398c3339.jpg.webp" alt="Imagem 5" class="img-fluid w-100">
+              </div>
+  
+              <!-- Terceira Linha - 3 Imagens -->
+              <div class="col-md-4">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7415/live/67d35bf0-502d-11ef-b2d2-cdb23d5d7c5b.jpg.webp" alt="Imagem 6" class="img-fluid w-100">
+              </div>
+  
+              <div class="col-md-4">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/d160/live/431d2740-5029-11ef-aebc-6de4d31bf5cd.jpg.webp" alt="Imagem 7" class="img-fluid w-100">
+              </div>
+  
+              <div class="col-md-4">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/bd01/live/88828420-502d-11ef-8f0f-0577398c3339.jpg.webp" alt="Imagem 8" class="img-fluid w-100">
+              </div>
+  
+              <!-- Quarta Linha - 1 Imagem -->
+              <div class="col-md-12">
+                  <img src="https://www.rbsdirect.com.br/filestore/8/2/6/5/1/0/5_430585c6e5dabee/5015628_9a8fce568aba0e8.jpg?format=webp&h=408" alt="Imagem 9" class="img-fluid w-100">
+              </div>
+  
+              <!-- Quinta Linha - 3 Imagens -->
+              <div class="col-md-4">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7b60/live/bbaea4b0-50cc-11ef-b2d2-cdb23d5d7c5b.jpg.webp" alt="Imagem 10" class="img-fluid w-100">
+              </div>
+  
+              <div class="col-md-4">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/6f87/live/372f1d40-50d7-11ef-aebc-6de4d31bf5cd.jpg.webp" alt="Imagem 11" class="img-fluid w-100">
+              </div>
+  
+              <div class="col-md-4">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/accc/live/1fd402f0-50dc-11ef-8f0f-0577398c3339.jpg.webp" alt="Imagem 12" class="img-fluid w-100">
+              </div>
+  
+              <!-- Sexta Linha - 2 Imagens -->
+              <div class="col-md-6">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/368e/live/bfccc530-50dc-11ef-aebc-6de4d31bf5cd.jpg.webp" alt="Imagem 13" class="img-fluid w-100">
+              </div>
+  
+              <div class="col-md-6">
+                  <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/2705/live/b9ed44d0-50fc-11ef-8f0f-0577398c3339.jpg.webp" alt="Imagem 14" class="img-fluid w-100">
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="galeria.js"></script>
   </body>
   </html>

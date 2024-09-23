@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <link rel="shortcut icon" href="https://logodownload.org/wp-content/uploads/2020/03/olimpiada-olympic-games-logo-0.png">
-    <link rel="shortcut icon" href="https://logodownload.org/wp-content/uploads/2020/03/olimpiada-olympic-games-logo-0.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../home.css">
-    <link rel="stylesheet" href="noticias.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Infinito com Links</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="shortcut icon" href="https://logodownload.org/wp-content/uploads/2020/03/olimpiada-olympic-games-logo-0.png">
+  <link rel="shortcut icon" href="https://logodownload.org/wp-content/uploads/2020/03/olimpiada-olympic-games-logo-0.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="noticias.css">
+  <link rel="stylesheet" href="../home.css">
 </head>
+
 <body>
+<<<<<<< Updated upstream
     <!-- Svgs -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="home" viewBox="0 0 16 16">
@@ -23,6 +27,24 @@
   
     </svg>
   
+=======
+  <!-- Svgs -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="home" viewBox="0 0 16 16">
+      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+    </symbol>
+
+    <symbol id="list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </symbol>
+
+    <symbol id="caret-left-square" viewBox="0 0 16 16">
+      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12"/>
+    </symbol>
+  </svg>
+
+
+>>>>>>> Stashed changes
   <!-- Nav -->
   <nav class="fixed-top">
     <div id="header" class="container-fluid">
@@ -32,6 +54,7 @@
       <div class="container-fluid m-auto">
         <div class="d-inline-block ms-md-4" role="button" onclick="window.location.href='../calendario/calendario.html'">
           <span class="m-2" >Programação</span>
+<<<<<<< Updated upstream
         </div>
         <div class="d-inline-block ms-md-4" role="button" onclick="window.location.href='../medalhas/Medalhas.html'">
           <span class="m-2" >Medalhas</span>
@@ -74,9 +97,310 @@
       </div>
     </div>
   </nav>
+=======
+        </div>
+        <div class="d-inline-block ms-md-4" role="button" onclick="window.location.href='../medalhas/Medalhas.html'">
+          <span class="m-2" >Medalhas</span>
+        </div>
+      </div>
+      <div id="circulo"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <svg class="bi m-md-2" width="30" height="30" fill="white"><use xlink:href="#list"/></svg>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" data-bs-theme="dark">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" fill="white"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="../historia/origem.html">História dos Jogos Olímpicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="../calendario/calendario.html">Programação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="../calendario/calendario.html">Atletas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="../medalhas/Medalhas.html ">Medalhas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="../calendario/calendario.html">Notícias e Atualizações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="../calendario/calendario.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="../calendario/calendario.html">Mapa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="../calendario/calendario.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid main-div justify-content-center align-items-center w-75">
+    <h1>Atualizações</h1>
+    <hr class="custom-line w-100"></div>
+  </div>
+
+  <div class="container-fluid w-65 mt-5">
+    <div class="slider-wrapper">
+      <!-- Botão de Navegação Esquerdo -->
+      <button class="slider-btn slider-btn-left" id="prevBtn">
+        <svg class="bi" width="32" height="32" fill="currentColor">
+          <use xlink:href="#caret-left-square"></use>
+        </svg>
+      </button>
+      <div class="slider-container">
+        <div class="card-slider" id="cardSlider">
+
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="https://olympics.com/pt/noticias/copa-do-mundo-futsal-2024-data-horario-assistir-brasil-costa-rica" target="_blank">
+              <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/wcatdwxcarssuhy93nwg" class="card-img-top" alt="Imagem 1">
+              <div class="card-body">
+                <h5 class="card-title">Copa do Mundo de Futsal 2024: data, horário e onde assistir Brasil x Costa Rica pelas oitavas</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <a href="https://olympics.com/pt/noticias/carta-despedida-rebeca-andrade-retorno-ginastica-artistica" target="_blank">
+              <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/jkbsv5ipgql6zmtsxhsn" class="card-img-top" alt="Imagem 2">
+              <div class="card-body">
+                <h5 class="card-title">Da carta de despedida para um ‘até logo’: Rebeca Andrade se despede de 2024, mas não da ginástica artística </h5>
+              </div>
+            </a>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <a href="https://olympics.com/pt/noticias/brasil-mundial-skate-park-dia-5-finais" target="_blank">
+              <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/w47pffrinc5qgatagbi0" class="card-img-top" alt="Imagem 3">
+              <div class="card-body">
+                <h5 class="card-title">Raicca Ventura e Augusto Akio fazem dobradinha brasileira com títulos no Mundial de Skate Park Roma 2024</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Card 4 -->
+          <div class="card">
+            <a href="https://olympics.com/pt/noticias/time-europa-campeao-laver-cup-2024-tenis" target="_blank">
+              <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/v1727037034/primary/pwjom7vhbvyi3xqmtlxq" class="card-img-top" alt="Imagem 4">
+              <div class="card-body">
+                <h5 class="card-title">Time Europa vira, faz 13 a 11 sobre o Time Mundo e conquista a Laver Cup 2024 de tênis</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Card 5 -->
+          <div class="card">
+            <a href="https://olympics.com/pt/noticias/rebeca-andrade-barras-assimetricas-brasileiro-ginastica-artistica-2024" target="_blank">
+              <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/vfpgbb5zfxplpcij44tm" class="card-img-top" alt="Imagem 5">
+              <div class="card-body">
+                <h5 class="card-title">Rebeca Andrade precisa de apenas uma final para brilhar no Campeonato Brasileiro de Ginástica Artística 2024 </h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botão de Navegação Direito -->
+      <button class="slider-btn slider-btn-right" id="nextBtn">
+        <svg class="bi" width="32" height="32" fill="currentColor">
+          <use xlink:href="#caret-left-square"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid main-div justify-content-center align-items-center w-75 mt-5">
+    <h1>Principais Noticias</h1>
+    <hr class="custom-line w-100"></div>
+  </div>
+
+  <div class="container-fluid w-65 mt-5">
+    <div class="container mt-4">
+        <div class="row g-3">
+            <!-- Primeira Linha - 3 Imagens -->
+            <div class="col-md-4">
+                <a href="https://olympics.com/pt/noticias/pepe-goncalves-bronze-caiaque-cross-canoagem-slalom-2024" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/hkeubnmv7qil2zauem4n" alt="Card 1" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Pepê Gonçalves é bronze na última etapa do caiaque cross na Copa do Mundo de Canoagem Slalom 2024</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://olympics.com/pt/noticias/time-mundo-tres-confrontos-lideranca-laver-cup-2024-tenis" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/v1726953650/primary/fraduvachqzvixsohuep" alt="Card 2" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Time Mundo vence três confrontos e abre 8 a 4 na Laver Cup 2024 de tênis</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://olympics.com/pt/noticias/brasil-mundial-skate-park-dia-4-semifinais" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/a7wp2r5b1qfnydimfnkn" alt="Card 3" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Kalani Konig é o melhor do dia e Brasil terá cinco atletas nas finais no Mundial de Skate Park Roma 2024</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Segunda Linha - 2 Imagens -->
+            <div class="col-md-6">
+                <a href="https://olympics.com/pt/noticias/beatriz-haddad-maia-campea-wta-500-seul" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/xedyxf6xwk0s1mmgyvwg" alt="Card 4" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Beatriz Haddad Maia vence de virada é campeã do WTA 500 de Seul</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <a href="https://olympics.com/pt/noticias/bia-haddad-maia-wta-500-seul-data-horario-assistir-final" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/av7l0dp8hbwmew5omkit" alt="Card 5" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Bia Haddad Maia no WTA 500 de Seul: data, horário e onde assistir à final contra Daria Kasatkina</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Terceira Linha - 3 Imagens -->
+            <div class="col-md-4">
+                <a href="https://olympics.com/pt/noticias/mundial-de-ciclismo-estrada-2024-principais-resultados" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/dopwnulxfaoyi4arwo9y" alt="Card 6" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Mundial de Ciclismo Estrada 2024: confira os principais resultados do evento</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://ge.globo.com/skate/noticia/2024/09/22/gui-khury-e-ouro-no-best-trick-vertical-dos-x-games-e-supera-recorde-de-medalhas-de-um-adolescente.ghtml" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://s2-ge.glbimg.com/uDcJR4D7rF1FNKm39MEg9kJqy6M=/0x0:2048x1366/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/i/z/BV1OVNTJC37cawt9yw2Q/461096203-1066406218186097-1539537279476570302-n.jpg" alt="Card 7" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Gui Khury é ouro no "best trick" dos X-Games e supera recorde de medalhas de um adolescente</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://interativos.ge.globo.com/olimpiadas/especial/meu-podio-olimpico-paris-2024" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://s2-ge.glbimg.com/kvdK6SG1nTMhve4Z-4mMhPUK57M=/0x0:1080x608/540x304/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/U/s/thARB9RBS8B8N1AxJ9cA/carrossel-podio-olimpico-2024.jpg" alt="Card 8" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Meu Pódio Olímpico</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Quarta Linha - 1 Imagem -->
+            <div class="col-md-12">
+                <a href="https://ge.globo.com/olimpiadas/blogs/brasil-em-los-angeles/noticia/2024/09/20/titulos-renovacoes-polemicas-e-podios-da-nova-geracao-o-que-rolou-no-esporte-apos-paris.ghtml" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://s2-ge.glbimg.com/HfaKQSBCL-BHfiocPLwlwVB5ktI=/0x0:1080x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/D/7/smGaISRAiNgoZagADfAQ/cbskskate-1726343629-3457143394055159445-1211816955.jpg" alt="Card 9" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Títulos, renovações, polêmicas e pódios da nova geração: o que rolou no esporte após Paris</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Quinta Linha - 3 Imagens -->
+            <div class="col-md-4">
+                <a href="https://ge.globo.com/olimpiadas/noticia/2024/09/20/psicologa-avalia-sucesso-a-frente-do-cob-e-comemora-a-performance-e-possivel-com-saude-mental.ghtml" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://s2-ge.glbimg.com/hMM2X5HzFpLRyBfBu8js3foQ_wQ=/0x0:985x1062/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/B/m/GiEV6TQjAHHnKAXYhwow/whatsapp-image-2024-09-19-at-17.12.04.1.jpeg" alt="Card 10" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Psicóloga avalia sucesso à frente do COB e comemora: "A performance é possível com saúde mental"</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://ge.globo.com/olimpiadas/noticia/2024/09/20/atiradora-sul-coreana-que-viralizou-nas-olimpiadas-vai-interpretar-assassina-em-serie-de-tv.ghtml" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://s2-ge.glbimg.com/Z8MboHpZUbgJFp4ObmXVENh7nGQ=/0x0:1024x682/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/T/J/iqhanJSbuFhRGQKOFxCA/000-368t7ye.jpg" alt="Card 11" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Atiradora sul-coreana que viralizou nas Olimpíadas vai interpretar assassina em série de TV</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://ge.globo.com/judo/noticia/2024/09/20/judoca-servio-recebe-suspensao-de-cinco-meses-por-fazer-sinal-da-cruz-nas-olimpiadas.ghtml" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://s2-ge.glbimg.com/p7Lp5YZQGuxkpUSWwSJs_YHxPTw=/0x0:3303x2235/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/X/i/zpMtyyQTuOgVT1QObCvg/gettyimages-2164603784.jpg" alt="Card 12" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Judoca sérvio recebe suspensão de cinco meses por fazer sinal da cruz nas Olimpíadas</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sexta Linha - 2 Imagens -->
+            <div class="col-md-6">
+                <a href="https://ge.globo.com/olimpiadas/noticia/2024/09/19/agencia-antidoping-relata-recorde-de-testes-nas-olimpiadas-e-5-casos-de-doping-em-paris.ghtml" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://s2-ge.glbimg.com/LVG7zL_DoJe3aNeKFj0n1KBMKe4=/0x0:1024x681/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/9/P/zhl1BqQvKdTJyHYDLvlA/gettyimages-464477468.jpg" alt="Card 13" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Agência antidoping relata recorde de testes nas Olimpíadas e 5 casos de doping em Paris</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <a href="https://ge.globo.com/volei/noticia/2024/09/19/rosamaria-dribla-solidao-desafios-da-lingua-por-evolucao-e-brinca-com-forte-calor-na-volta-ao-japao.ghtml" target="_blank">
+                    <div class="card-overlay">
+                        <img src="https://s2-ge.glbimg.com/5gIAnNIJOtB21x49xlLlc2hs4lw=/0x277:1290x2122/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/k/t/hbikpVQy2AFHvUjKaihQ/459831630-1355721705136032-375910217229028089-n.jpg" alt="Card 14" class="img-fluid w-100">
+                        <div class="card-description">
+                            <h5>Rosamaria dribla solidão, desafios da língua por evolução e brinca com forte calor na volta ao Japão</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+>>>>>>> Stashed changes
 
 
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
-  </html>
+
+
+
+
+  <!-- Bootstrap JS, jQuery, and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- JavaScript para o slider infinito -->
+  <script src="noticias.js"></script>
+
+</body>
+</html>
